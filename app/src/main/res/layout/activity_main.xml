@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wave"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:text="Main Menu"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/triviaBtn"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Trivia"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/guessBtn"
+        app:layout_constraintStart_toStartOf="@+id/guessBtn"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/guessBtn"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Guess the Number"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/triviaBtn" />
+
+    <Button
+        android:id="@+id/cameraBtn"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Camera"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/calculatorBtn"
+        app:layout_constraintStart_toStartOf="@+id/calculatorBtn"
+        app:layout_constraintTop_toBottomOf="@+id/guessBtn" />
+
+
+
+    <Button
+        android:id="@+id/calculatorBtn"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Calculator"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cameraBtn" />
+
+    <Button
+        android:id="@+id/sevenBoomBtn"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="7 Boom"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/calculatorBtn"
+        app:layout_constraintStart_toStartOf="@+id/calculatorBtn"
+        app:layout_constraintTop_toBottomOf="@+id/calculatorBtn" />
+
+    <Button
+        android:id="@+id/tictactoe"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Tic Tac Toe"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/sevenBoomBtn"
+        app:layout_constraintStart_toStartOf="@+id/sevenBoomBtn"
+        app:layout_constraintTop_toBottomOf="@+id/sevenBoomBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
